@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agro Planner Biodinamico COSUFER</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color: #1a2a24; /* Dark Green */
+        font-family: 'Nunito', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .fade-in {
+        animation: fadeInAnimation 0.5s ease-out forwards;
+      }
+      @keyframes fadeInAnimation {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      /* Estilos para el autocompletado de Google Maps */
+      .pac-container {
+        background-color: #1c2c25; /* Darker Green */
+        border: 1px solid #2a4a3a;
+        border-radius: 0.5rem;
+        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        z-index: 1050 !important; /* Asegura que este por encima de todo */
+      }
+      .pac-item {
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        color: #e0e0e0; /* Off-white */
+        border-top: 1px solid #2a4a3a;
+      }
+      .pac-item:first-child {
+        border-top: none;
+      }
+      .pac-item:hover {
+        background-color: #2a4a3a;
+      }
+      .pac-item-query {
+        font-weight: 600;
+        color: #ffffff;
+      }
+      .pac-matched {
+        color: #6ee7b7; /* emerald-300 */
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.2.0",
+    "react-dom": "https://esm.sh/react-dom@18.2.0",
+    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+    "react/jsx-runtime": "https://esm.sh/react@18.2.0/jsx-runtime",
+    "@react-google-maps/api": "https://esm.sh/@react-google-maps/api@^2.19.3?external=react,react-dom",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "dotenv/": "https://esm.sh/dotenv@^17.2.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.10.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <noscript>Necesitas habilitar JavaScript para correr esta aplicacion.</noscript>
+    <div id="root"></div>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

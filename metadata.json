@@ -1,0 +1,6 @@
+{
+  "name": "Agro Planner COSUFER VERCEL",
+  "description": "Aplicacion web que entrega recomendaciones de agricultura biodinamica para cualquier lugar de Sudamerica, basadas en la geolocalizacion, fase lunar actual y datos meteorologicos.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
